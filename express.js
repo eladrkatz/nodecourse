@@ -12,6 +12,10 @@ app.get('/', function (req, res) {
   res.send('Hello World!');
 })
 
+app.get('/user/:id', function (req, res, next) {
+  res.json({elad:'moshe'});
+})
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 })
