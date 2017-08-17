@@ -35,8 +35,8 @@ function resolveAfter3Seconds(x) {
 
 async function add1(x) {
   var a = resolveAfter3Seconds(20);
-  var b = resolveAfter3Seconds(30);
-  return x + await a + await b;
+  var b = await resolveAfter3Seconds(30);
+  return x + a + b;
 }
 
 
